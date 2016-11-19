@@ -1,5 +1,5 @@
 <?php
-include 'Movement.php';
+include 'MovementStrategy.php';
 abstract class Soldier {
   private $name;
   private $rank;

@@ -1,5 +1,5 @@
 <?php
-include 'Tank.php';
+include 'TankFactory.php';
 class GroundVehicle {
   private $vehicle;
 
