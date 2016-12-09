@@ -1,5 +1,5 @@
 <?php
-define("UPLOAD_DIR", "~/public_html/download");
+define("UPLOAD_DIR", "~/afs/cad/u/r/t/rt275/public_html/UPLOADS");
 class FileUpload {
 
   protected $file = array(); //pull in whole $_FILES array instead of just file so I can error check in here.
@@ -28,6 +28,8 @@ class FileUpload {
         UPLOAD_DIR . $name);
     if (!$success) {
         echo "Unable to save file.";
+        echo '<br>';
+        echo $file[$fileName]['error'];
         exit;
     }
 
